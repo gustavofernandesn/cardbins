@@ -22,10 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
 2.4.1 :001 > require 'Cardbins'
  => true
 2.4.1 :002 > brand = Cardbins.bin("636297")
  => "ELO"
+ ```
 
 ## Development
 
