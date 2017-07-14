@@ -2,7 +2,7 @@ require "cardbins/version"
 require "cardbins/brand"
 
 module Cardbins
-  def self.bin(card_bin)
-    brand_name = Brand.new(card_bin).find
+  def self.search(bin)
+    range = Cardbins::Brand.search(bin)
   end
 end
