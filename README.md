@@ -1,9 +1,19 @@
 # Cardbins
 
-If you have a payment app and you need to check the card's brand name, this
-gem may can help you to find it. The card's bins data is stored into a xml
-file and it will be used to compare the card's bins range informed and returns
-the correct brand name.
+This gem will help you to identify the card's brand name by the initial bin.
+You should inform the first six digits of credit or debit card.
+
+Included Cards:
+
+- MASTER
+- VISA
+- ELO
+- AMEX
+- TICKET
+- SODEXO
+- VR
+- ALELO
+- HIPERCARD
 
 ## Installation
 
@@ -24,9 +34,9 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-2.4.1 :001 > require 'Cardbins'
+2.4.1 :001 > require 'cardbins'
  => true
-2.4.1 :002 > brand = Cardbins.bin("636297")
+2.4.1 :002 > brand = Cardbins.search("636297")
  => "ELO"
  ```
 
