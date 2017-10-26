@@ -3,7 +3,7 @@ require "spec_helper"
 RSpec.describe Cardbins do
   # Version app test
 
-  it "Check if the app ha a version number" do
+  it "Check if the app has a version number" do
     expect(Cardbins::VERSION).not_to be nil
   end
 
@@ -46,26 +46,26 @@ RSpec.describe Cardbins do
     expect(range).to eql("VISA")
   end
 
-  # Master bin test
+  # Mastercard bin test
 
   it "Test MASTER 01: Bin: 589916" do
     range = Cardbins::Brand.search("589916")
-    expect(range).to eql("MASTER")
+    expect(range).to eql("MASTERCARD")
   end
 
   it "Test MASTER 02: Bin: 526863" do
     range = Cardbins::Brand.search("526863")
-    expect(range).to eql("MASTER")
+    expect(range).to eql("MASTERCARD")
   end
 
   it "Test MASTER 03: Bin: 525663" do
     range = Cardbins::Brand.search("525663")
-    expect(range).to eql("MASTER")
+    expect(range).to eql("MASTERCARD")
   end
 
   it "Test MASTER 04: Bin: 536390" do
     range = Cardbins::Brand.search("536390")
-    expect(range).to eql("MASTER")
+    expect(range).to eql("MASTERCARD")
   end
 
   # Elo bin test
@@ -98,10 +98,10 @@ RSpec.describe Cardbins do
     expect(brand).to eql("VISA")
   end
 
-  it "Test Search Brand 02: MASTER" do
+  it "Test Search Brand 02: MASTERCARD" do
     id = 2
     brand = Cardbins::Brand.brand_search(id)
-    expect(brand).to eql("MASTER")
+    expect(brand).to eql("MASTERCARD")
   end
 
   it "Test Search Brand 03: ELO" do
