@@ -19,7 +19,7 @@ module Cardbins
       @brands ||= {"Brands"=>
         {"CrdBrd"=>
           [{"Id"=>"1", "Description"=>"VISA"},
-            {"Id"=>"2", "Description"=>"MASTER"},
+            {"Id"=>"2", "Description"=>"MASTERCARD"},
             {"Id"=>"3", "Description"=>"HIPERCARD"},
             {"Id"=>"5", "Description"=>"TICKET"},
             {"Id"=>"8", "Description"=>"SODEXO"},
