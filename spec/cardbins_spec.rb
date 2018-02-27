@@ -46,6 +46,18 @@ RSpec.describe Cardbins do
     expect(range).to eql("VISA")
   end
 
+  # Amex bin test
+
+  it "Test AMEX 01: Bin: 376449" do
+    range = Cardbins::Brand.search("376449")
+    expect(range).to eql("AMEX")
+  end
+
+  it "Test AMEX 02: Bin: 376485" do
+    range = Cardbins::Brand.search("376485")
+    expect(range).to eql("AMEX")
+  end
+
   # Mastercard bin test
 
   it "Test MASTER 01: Bin: 589916" do
