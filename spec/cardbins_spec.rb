@@ -102,6 +102,11 @@ RSpec.describe Cardbins do
     expect(range).to eql("ELO")
   end
 
+  it "Test ELO 05: Bin: 506735" do
+    range = Cardbins::Brand.search("506735")
+    expect(range).to eql("ELO")
+  end
+
   # Brand test by id
 
   it "Test Search Brand 01: VISA" do
